@@ -9,20 +9,20 @@
 
 
    /*==============                    =================*/
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+let sections = document.querySelectorAll('section')
+let navLinks = document.querySelectorAll('header nav a')
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsectTop - 150;
+window.onscroll=()=>{
+    sections.forEach(sec=>{
+        let top=window.scrollY;
+        let offset = sec.offsetTop -150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if(top>=offset && top<offset + height) {
             navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                links.classList.remove('active')
+                document.querySelector('header nav a[href*=' +id+ ']').classList.add('active')
             });
         };
     });
@@ -47,6 +47,6 @@ ScrollReveal({
     delay: 200
 });
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
-ScrollReveal().reveal('.container-edicion, .container-lenguajes, .img-home, .services-container, .portafolio-box, .contact form', { origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img, .home-content p', { origin: 'left'});
-ScrollReveal().reveal('.about-content p, .card', { origin: 'right'});
+ScrollReveal().reveal('.container-edicion, .container-lenguajes, .img-home, .services-container, .contact form', { origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img, .home-content p , .tools , .portafolio-box', { origin: 'left'});
+ScrollReveal().reveal('.about-content p, .card , .section-tools', { origin: 'right'});
