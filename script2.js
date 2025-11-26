@@ -48,5 +48,5 @@ ScrollReveal({
 });
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
 ScrollReveal().reveal('.container-edicion, .container-lenguajes, .img-home, .services-container, .contact form', { origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img, .home-content p , .tools , .portafolio-box', { origin: 'left'});
+ScrollReveal().reveal('.home-content h1, .about-img, .home-content p , .tools', { origin: 'left'});
 ScrollReveal().reveal('.about-content p, .card , .section-tools', { origin: 'right'});

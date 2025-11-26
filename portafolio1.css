@@ -209,10 +209,25 @@ span{
 .about-content{
     position: relative;
 }
-.about-content span i{
-    background: white;
-    font-size: 1.2rem;
-    border-radius: 50%;
+
+.about-content ul .datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+.about-content ul .datos h4{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.about-content ul .datos .opaco{
+    color: #007bff00;
+}
+.about-content p{
+    font-size: 2.1rem;
+    font-weight: 200;
 }
 .about-content h2{
     text-align: left;
@@ -224,14 +239,7 @@ span{
     font-weight: 500;
     letter-spacing: .2rem;
 }
-.about-content h3{
-    font-size: 2.6rem;
-}
-.about-content p{
-    font-size: 2.1rem;
-    font-weight: 200;
-    margin: 2rem 0 3rem;
-}
+
 
 
 /*     SECTION-TOOLS     */
@@ -242,7 +250,7 @@ span{
     justify-content: center;
     align-items: center;
     background: #190230;
-    padding: 3rem 9% 3rem;
+    padding: 3rem 7% 3rem;
 }
 .section-tools{
     width: 100%;
@@ -264,9 +272,13 @@ span{
     font-size: 5rem;
     font-weight: 400;
 }
+.section-tools .about-skills ul li{
+    font-size: 2.5rem;
+    color: white;
+}
 .section-tools .about-skills p{
     font-size: 1.9rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 /*-----     TOOLS       -----*/
 .tools{
