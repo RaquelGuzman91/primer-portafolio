@@ -375,7 +375,7 @@ span{
     z-index: 4;
 }
 .portafolio-box .nav-violet{
-    background: #ca8a70;
+    background: #23325F;
 }
 .portafolio-box .nav-blue{
     background: #1d76ab;
@@ -454,7 +454,7 @@ span{
 }
 
 .portafolio-box .layer-violet{
-    background: #ad6c5296;
+    background: #23325f94;
 }
 .portafolio-box .layer-blue{
     background: #1d77ab75;
@@ -591,6 +591,8 @@ span{
     .section-tools {
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
         .section-tools .skill-img img{
         width: 100%;
