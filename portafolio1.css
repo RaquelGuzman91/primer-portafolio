@@ -191,7 +191,7 @@ span{
     background: #190230;
     overflow-x: hidden;
     overflow: hidden;
-    padding: 2rem 9% 2rem;
+    padding: 10rem 11% 3rem;
 }
 .about-img img{
     width: 30vw;
@@ -250,7 +250,7 @@ span{
     justify-content: center;
     align-items: center;
     background: #190230;
-    padding: 3rem 7% 3rem;
+    padding: 10rem 11% 3rem;
 }
 .section-tools{
     width: 100%;
@@ -261,7 +261,7 @@ span{
     padding: 3rem 0px;
 }
 .section-tools .skill-img img{
-    width: 45vw;
+    width: 40vw;
 }
 
 .section-tools .about-skills h2{
