@@ -396,6 +396,9 @@ span{
 .portafolio-box .nav-red{
     background: #731012;
 }
+.portafolio-box .nav-celeste{
+    background: #8BA0B4;
+}
 .portafolio-box  .icon-box p{
     font-size: 1.6rem;
     font-weight: 300;
@@ -477,6 +480,9 @@ span{
 }
 .portafolio-box:hover .portafolio-layer{
     transform: translateY(0);
+}
+.portafolio-box:hover .layer-celeste{
+    background: #8ba0b496;
 }
 
 
@@ -584,8 +590,19 @@ span{
     }
     .footer{
         padding: 2rem 3%;
-    }    
-
+    }
+    .about{
+    padding: 10rem 3% 2rem;
+}
+.home{
+    padding: 10rem 3% 2rem;
+}
+.skills-section{
+    padding: 10rem 3% 2rem;
+}
+.tools{
+    padding: 10rem 3% 2rem;
+}
 }
 @media(max-width: 877px){
     .section-tools {
