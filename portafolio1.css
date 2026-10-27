@@ -76,15 +76,24 @@ body{
 
 /*      home        */
 .home{
-    min-height: 95vh;
+    width: 100%;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     background: #190230;
     background: linear-gradient(155deg,rgba(25, 2, 48, 1) 45%, rgba(63, 31, 126, 1) 74%, rgba(116, 69, 209, 1) 100%);
     position: relative;
-    padding: 10rem 9% 3rem;
+    
+}
+.main-home{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .home::before{
     position: absolute;
@@ -183,15 +192,14 @@ span{
 }
 /*about*/
 .about{
-    min-height: 55vh;
+    width: 100%;
+    padding: clamp(.5rem, 5vw, 5rem) clamp(.5rem, .7vw, .7rem) ;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 6rem;
     background: #190230;
     overflow-x: hidden;
     overflow: hidden;
-    padding: 10rem 11% 3rem;
 }
 .about-img img{
     width: 30vw;
@@ -202,12 +210,24 @@ span{
     filter: 
     drop-shadow(-1px 3px 5px white);
 }
+.main-about{
+    width: 85%;
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .heading{
     text-align: center;
     font-size: 5rem;
 }
 .about-content{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.5rem;
 }
 
 .about-content ul .datos{
@@ -226,7 +246,7 @@ span{
     color: #007bff00;
 }
 .about-content p{
-    font-size: 2.1rem;
+    font-size: 1.74rem;
     font-weight: 200;
 }
 .about-content h2{
@@ -241,29 +261,36 @@ span{
 }
 
 
-
 /*     SECTION-TOOLS     */
 .skills-section{
-    min-height: 105vh;
+    width: 100%;
+    padding: 3rem .5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #190230;
-    padding: 10rem 11% 3rem;
+    gap: 6rem;
 }
 .section-tools{
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 3rem 0px;
 }
 .section-tools .skill-img img{
     width: 40vw;
+    
 }
-
+.about-skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
 .section-tools .about-skills h2{
     background: #D84DE8;
     background: linear-gradient(to right, #D84DE8 0%, #58b0f8 50%, #8BB5F6 100%);
@@ -272,8 +299,44 @@ span{
     font-size: 5rem;
     font-weight: 400;
 }
-.section-tools .about-skills ul li{
-    font-size: 2.5rem;
+.skills-section .about-skills .habilidades-contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-content: center;
+    align-items: stretch;
+    gap: 3rem;
+}
+.skills-section .about-skills .habilidades-contenedor li{
+    padding: 4rem;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.089);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    border-radius: 20px;
+    
+}
+.skills-section .about-skills .habilidades-contenedor li a svg{
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    padding: 1.3rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.13);
+    fill: white;
+    transition: .5s ease;
+}
+.skills-section .about-skills .habilidades-contenedor li:hover a svg{
+    filter: 
+    drop-shadow(-1px 3px 6px white);
+    color: white;
+    transform: scale(1.10);
+}
+.section-tools .about-skills ul li p{
+    font-size: 1.5rem;
     color: white;
 }
 .section-tools .about-skills p{
@@ -282,13 +345,14 @@ span{
 }
 /*-----     TOOLS       -----*/
 .tools{
-    width: 100%;
+    width: 85%;
     background: #190230;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem .5rem;
+    gap: 2.5rem;
+    
 }
 .tools h2{
     width: 100%;
@@ -308,28 +372,30 @@ span{
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 2rem;
-    padding: 1rem .5rem;
 }
 .tools .container-tools .tool-img{
     width: 100%;
     transition: .5s ease;
     text-align: center;
+    padding: 1rem .7rem;
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(10px);
 }
 .tools .container-tools .tool-img img{
-    width: 70px;
-    height: 75px;
+    width: 47px;
+    height: 47px;
+    border-radius: 10px;
     transition: .5s ease;
 }
 .tools .container-tools .tool-img:hover{
-    transform: scale(1.30);
+    transform: scale(1.15);
 }
 .tools .container-tools .tool-img .figma{
     width: 45px;
 }
-.tools .container-tools .tool-img img{
-    width: 70px;
-    height: 75px;
-}
+
 
 /*  servicios   */
 /*      portafolio      */
@@ -337,9 +403,14 @@ span{
     overflow: hidden;
     overflow-x: hidden;
     background: #190230;
-    padding: 2rem 11% 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0px;
 }
 .portafolio h2{
+    width: 85%;
     margin-bottom: 2rem;
     text-align: left;
     font-weight: 400;
@@ -349,10 +420,12 @@ span{
     -webkit-text-fill-color: transparent;
 }
 .portafolio-container{
+    width: 85%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2.5rem;
     margin-bottom: 3rem;
+    border-radius: 20px; 
 }
 .portafolio-container .portafolio-box{
     position: relative;
@@ -364,6 +437,8 @@ span{
     justify-content: end;
     align-items: end;
     z-index: 1;
+    
+
 }
 .portafolio-box img{
     width: 100%;
@@ -569,59 +644,77 @@ span{
 }
 
 /*      responsive      */
+@media(max-width: 1000px){
+    .main-about,
+    .section-tools,
+    .tools,
+    .portafolio h2,
+    .portafolio-container
+    {
+    width: 96%;
+}
+}
+@media(max-width: 732px){
+    .main-about{
+    width: 96%;
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width: 100%;
+}
+.home .main-home{
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+}
+.home .main-home .img-home{
+    text-align: center;
+    width: violet   ;
+}
+.home .main-home .img-home img{
+    width: 50vw;
+    
+}
+}
+
+@media(max-width: 475px){
+    .home .main-home{
+    width: 96%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+}
+}
+
 @media (max-width: 1200px){
     html{
         font-size: 55%;
     }
 }
 @media (max-width: 1000px){
-    .portafolio{
-        padding: 2rem 5% 2rem;
-    }
+    
 }
 @media (max-width: 991px){
     .header{
         padding: 2rem 3%;
     }
-    .section{
-        padding: 10rem 3% 2rem;
-    }
-    .portafolio{
-        padding-bottom: 7rem;
-    }
+    
     .contact{
         min-height: auto;
-    }
-    .services{
-        padding-bottom: 7rem;
     }
     .footer{
         padding: 2rem 3%;
     }
-    .about{
-    padding: 10rem 3% 2rem;
+   
 }
-.home{
-    padding: 10rem 3% 2rem;
-}
-.skills-section{
-    padding: 10rem 3% 2rem;
-}
-.tools{
-    padding: 10rem 3% 2rem;
-}
-}
-@media(max-width: 877px){
-    .section-tools {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-        .section-tools .skill-img img{
-        width: 100%;
-    }
-}
+
 @media (max-width: 768px){
     #menu-icon{
         display:block;
@@ -645,47 +738,9 @@ span{
         font-size: 2rem;
         margin: 3rem 0;
     }
-    .home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-    .img-home img{
-        width: 55vw;
-        margin-top: 4rem;
-    }
-    .about{
-        flex-direction: column-reverse;
-    }
-    .about img{
-        width: 55vw;
-        margin-bottom: 4rem;
-    }
-    .services h2{
-        margin-bottom: 3rem;
-    }
-    .portafolio h2{
-        margin-bottom: 3rem;
-    }
-    .portafolio-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
 
 }
 
-@media (max-width: 617px){
-    .portafolio-container{
-        grid-template-columns:  1fr;
-    }
-}
 
 @media (max-width: 450px) {
     html{
@@ -697,12 +752,6 @@ span{
 }
 
 @media (max-width: 365px) {
-    .img-home img{
-        width: 90vw;
-    }
-    .about-img img{
-        width: 90vw;
-    }
     .footer {
         flex-direction: column-reverse;
     }
