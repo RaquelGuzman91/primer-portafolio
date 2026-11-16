@@ -65,6 +65,11 @@ body{
 .navbar a:hover,
 .navbar a.active{
     color: white;
+    text-shadow: 0 0 5px #fff, /* Sombra blanca para el brillo interior */
+               0 0 10px #fff, /* Sombra blanca más grande para el halo */
+               0 0 20px #007bff, /* Sombra azul para un efecto neón */
+               0 0 40px #007bff; /* Sombra azul más difusa para el efecto */
+  transition: text-shadow 0.3s ease-in-out; /* Transición para el efecto */
 }
 #menu-icon{
     font-size: 5rem;    
